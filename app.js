@@ -53,8 +53,16 @@ function atBat() {
         outs++;
         if (outs == 1){ alert('1 out');}
         else if (outs == 2) { alert('2 outs');}
-        else alert("3 outs! Inning over. You scored " + runs + " runs. Good game!")
+        else { if (runs == 1) {alert("3 outs! Inning over. You scored 1 run. Good game!")}
+            else { alert("3 outs! Inning over. You scored " + runs + " runs. Good game!") }
+        outs = 0; // reset game here
+        sit = 0;
+        runs = 0;
+        offFirst();
+        offSecond();
+        offThird();
         }
+    }
 }
 function single(s) {
     if (s==0) { return 1; }
