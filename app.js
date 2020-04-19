@@ -49,6 +49,12 @@ function atBat() {
         sit = walk(sit);
         updateSit(sit);
     }
+    else{
+        outs++;
+        if (outs == 1){ alert('1 out');}
+        else if (outs == 2) { alert('2 outs');}
+        else alert("3 outs! Inning over. You scored " + runs + " runs. Good game!")
+        }
 }
 function single(s) {
     if (s==0) { return 1; }
