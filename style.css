@@ -1,0 +1,134 @@
+body {
+    background-color: tan;
+}
+
+h1 {
+    color:white;
+    font-family: 'Damion', cursive;
+    font-size: 100px;
+    text-align: center;
+    margin-bottom: -75px;
+    margin-top: 20px;
+    position: relative;
+    z-index: 300;
+    background: red;
+    top: -5px;
+}
+#diamond {
+    background-color: rgb(31, 202, 31);
+    height: 150px;
+    width: 150px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    margin-top: 200px;
+    position: relative;
+    z-index: 150;
+}
+#mound {
+    background-color: white;
+    height: 5px;
+    width: 30px;
+    margin: 0 auto;
+    margin-top: -77px;
+    position: relative;
+    z-index: 500;
+}
+#first {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    left: 123px;
+    top: -13px;
+    position: relative;
+    z-index: 500;
+}
+#third {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    left: -123px;
+    top: -33px;
+    position: relative;
+    z-index: 500;
+}
+#second {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    top: -176px;
+    position: relative;
+    z-index: 500;
+}
+#home {
+    background-color: white;
+    height: 20px;
+    width: 20px;
+    transform: rotate(45deg);
+    margin: 0 auto;
+    top: 50px;
+    position: relative;
+    z-index: 500;
+}
+#home2 {
+    background-color: white;
+    height: 15px;
+    width: 30px;
+    margin: 0 auto;
+    top: -415px;
+    position: relative;
+    z-index: 500;
+}
+#field1 {
+    height: 0;
+    width: 0;
+    position: relative;
+    top: -309px;
+    left: -147px;
+    border-top: solid 220px  rgb(31, 202, 31);
+    border-left: 220px solid  rgba(0, 0, 0, 0);
+    border-right: solid 220px rgba(0, 0, 0, 0);
+    z-index: 80;
+    margin: 0 auto;
+}
+#field2 {
+    height: 0;
+    width: 0;
+    position: relative;
+    top: -529px;
+    left: 147px;
+    border-top: solid 220px  rgb(31, 202, 31);
+    border-left: 220px solid  transparent;
+    border-right: solid 220px transparent;
+    z-index: 80;
+    margin: 0 auto;
+}
+#dirt {
+    height: 300px;
+    width: 400px;
+    margin: 0 auto;
+    background-color: tan;
+    z-index: 140;
+    margin-top: -690px;
+    border-radius: 50%;
+    position: relative;
+}
+#swing {
+    background-color: white;
+    border: 3px solid red;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0 auto;
+    box-sizing: border-box;
+    text-align: center;
+    padding: 3px 0 3px 0;
+    width: 100px;
+    margin-top: -200px;
+    margin-right: 100px;
+    z-index: 500;
+    cursor: pointer;
+}
