@@ -119,6 +119,7 @@ h1 {
     position: relative;
 }
 #swing {
+    cursor: pointer;
     background-color: white;
     border: 3px solid red;
     font-family: Arial, Helvetica, sans-serif;
@@ -128,7 +129,28 @@ h1 {
     padding: 3px 0 3px 0;
     width: 100px;
     margin-top: -200px;
-    margin-right: 100px;
+    margin-left: 795px;
     z-index: 500;
-    cursor: pointer;
+    font-weight: bold;
+    border-radius: 20%;
+    box-shadow: 3px 3px 4px black;
+    
+}
+#scoreboard, th, td {
+    background-color: white;
+    border: 3px solid black;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    padding: 3px 3px 3px 3px;
+    margin: 0 auto;
+    margin-left: 795px;
+    margin-top: 10px;
+    width: 100px;
+}
+#outs {
+    text-align: center;
+    font-size: 120%;
+}
+#score{
+    text-align: center;
 }

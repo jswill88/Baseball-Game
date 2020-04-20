@@ -15,7 +15,7 @@ function atBat() {
     var z = Math.random();
     if (z >=0 && z < .2){
         alert('You hit a single!');
-        if (sit == 2 || sit == 3 || sit == 4 || sit == 7) { runs++; alert('One run scores!')}
+        if (sit == 2 || sit == 3 || sit == 4 || sit == 7) { runs++; alert('One run scores!'); }
         if (sit == 5 || sit == 6) { runs = runs + 2; alert('Two runs score!')}
         sit = single(sit);
         updateSit(sit);
@@ -43,7 +43,7 @@ function atBat() {
         sit = 0;
         updateSit(sit);
     }  
-    else if (z >= .5 && z < .7){
+    else if (z >= .5 && z < .65){
         alert('You drew a walk!');
         if (sit == 6) { runs++; alert('One run scores!')}
         sit = walk(sit);
@@ -51,19 +51,30 @@ function atBat() {
     }
     else{
         outs++;
-        if (outs == 1){ alert('1 out');}
-        else if (outs == 2) { alert('2 outs');}
+        if (outs == 1){ alert('1 out');
+            document.getElementById('outs').innerHTML = '&#x25CF;&#x25CB;&#x25CB;';}
+        else if (outs == 2) { alert('2 outs');
+            document.getElementById('outs').innerHTML = '&#x25CF;&#x25CF;&#x25CB;';}
         else { if (runs == 1) {alert("3 outs! Inning over. You scored 1 run. Good game!")}
-            else { alert("3 outs! Inning over. You scored " + runs + " runs. Good game!") }
-        outs = 0; // reset game here
-        sit = 0;
-        runs = 0;
-        offFirst();
-        offSecond();
-        offThird();
+        else { alert("3 outs! Inning over. You scored " + runs + " runs. Good game!") }
+            outs = 0; // reset game here
+            sit = 0;
+            runs = 0;
+            offFirst();
+            offSecond();
+            offThird();
+            document.getElementById('outs').innerHTML = '&#x25CB;&#x25CB;&#x25CB;';
+            document.getElementById('score').innerHTML = " ";
         }
     }
+    for (var i = 0; i < runs; i++) {
+        score();
+    }
 }
+function score() {
+    document.getElementById('score').innerHTML = runs;
+}
+
 function single(s) {
     if (s==0) { return 1; }
     else if (s==1) { return 4; }
