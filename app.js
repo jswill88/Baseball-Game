@@ -10,6 +10,7 @@ var runs = 0;
 var outs = 0;
 
 document.getElementById('swing').onclick = atBat;
+
   
 function atBat() {
     var z = Math.random();
