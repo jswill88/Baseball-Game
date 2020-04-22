@@ -37,7 +37,7 @@ function atBat() {
     }  
     else if (z >= .4 && z < .5){
         alert('You hit a HOME RUN!');
-        if (sit == 0) { runs = runs + 2; alert('One run scores!')}
+        if (sit == 0) { runs++; alert('One run scores!')}
         if (sit == 1 || sit == 2 || sit == 3) { runs = runs + 2; alert('Two run scores!')}
         if (sit == 4 || sit == 5 || sit == 7) { runs = runs + 3; alert('Three runs score!')}
         if (sit == 6) { runs = runs + 4; alert('Four runs score!')}
